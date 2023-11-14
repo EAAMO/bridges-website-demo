@@ -1324,7 +1324,7 @@
 /* Basic */
 
 	body {
-		background: #2a2a2a;
+		background: #FFF8EE;
 		color: #4b4c4b;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-size: 12pt;
@@ -1924,7 +1924,7 @@
 		display: block;
 		font-size: 2em;
 		font-weight: 700;
-		color: #FFF;
+		color: #FFF8EE;
 	}
 
 	#logo h1 span {
@@ -1981,8 +1981,8 @@
 				font-weight: 700;
 				font-size: 1em;
 				outline: 0;
-				color: #aaa;
-				color: #FFF8EE;
+				color: #171f46;
+				color: #1F2A60;
 			}
 
 				#nav > ul > li > a.icon:before, #nav > ul > li > span.icon:before {
@@ -1993,8 +1993,8 @@
 				}
 
 			#nav > ul > li.active > a, #nav > ul > li.active > span {
-				color: #FFF8EE;
-				color: #FFF8EE;
+				color: #171f46;
+				color: #1F2A60;
 			}
 
 		#nav .arrow {
@@ -2012,6 +2012,7 @@
 		line-height: 1em;
 		padding: 1.25em 0 1.25em 0;
 		border-radius: 8px;
+		background-color: #FFF8EE;
 	}
 
 		.dropotron a, .dropotron span {
@@ -2022,8 +2023,8 @@
 			font-size: 0.90em;
 			font-weight: 700;
 			text-decoration: none;
-			color: #FFF8EE;
-			color: rgba(255, 255, 255, 0.6);
+			color: #171f46;
+			color: #1F2A60;
 		}
 
 		.dropotron li:first-child > a, .dropotron li:first-child > span {
@@ -2053,7 +2054,7 @@
 		background: #1F2A60 url("images/banner.svg") bottom center repeat;
 		background-size: auto 100%;
 		text-align: center;
-		color: #fff;
+		color: #FFF8EE;
 	}
 
 		#banner header {
