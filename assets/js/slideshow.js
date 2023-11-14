@@ -1,6 +1,5 @@
 let slideIndex = 0;
 setTimeout("showSlides(slideIndex)", 500);
-showSlides();
 
 // Next/previous controls
 function plusSlides(n) {
@@ -27,6 +26,7 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active_item";
 }
+
 function showSlides() {
   let i;
   let slides = document.getElementsByClassName("mySlides");
