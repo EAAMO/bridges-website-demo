@@ -8,7 +8,7 @@
 			<h2>Events organized by EAAMO Bridges and MD4SG</h2>
 		</header>
 			<ul>
-			{% for event in collections.events %}
+			{% for event in collections.events|reverse %}
 				{% if event.data.active == 1 %}
 					<li>
 					<b><a href={{event.url}} target="_blank"> {{ event.data.short_name }}</a></b>, organized by {{ event.data.organizers }}
