@@ -36,7 +36,7 @@
 
     <h2>Previous Colloquium Talks</h2>
     <ul>
-        {% for coll in collections.colloquiums %}
+        {% for coll in collections.colloquiums|reverse %}
             {% if coll.data.active == 0 %}
                 <li>
                     <a href={{ coll.url }} target="_blank">{{ coll.data.name }}</a>: {{ coll.data.talktitle }}, {{ coll.data.season }}
