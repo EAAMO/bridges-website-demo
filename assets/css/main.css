@@ -1982,7 +1982,7 @@
 				font-size: 1em;
 				outline: 0;
 				color: #aaa;
-				color: rgba(255, 255, 255, 0.6);
+				color: #FFF8EE;
 			}
 
 				#nav > ul > li > a.icon:before, #nav > ul > li > span.icon:before {
@@ -1993,8 +1993,8 @@
 				}
 
 			#nav > ul > li.active > a, #nav > ul > li.active > span {
-				color: #fff;
-				color: white;
+				color: #FFF8EE;
+				color: #FFF8EE;
 			}
 
 		#nav .arrow {
@@ -2022,7 +2022,7 @@
 			font-size: 0.90em;
 			font-weight: 700;
 			text-decoration: none;
-			color: #aaa;
+			color: #FFF8EE;
 			color: rgba(255, 255, 255, 0.6);
 		}
 
