@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/colloquium.njk",
+    "tags": "colloquiums"
+}

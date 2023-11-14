@@ -1,0 +1,48 @@
+{% block content %}
+    <h2>Upcoming Talks</h2>
+    {% for coll in collections.colloquiums %}
+        {% if coll.data.active == 1 %}
+            <div class="row">
+                <div class="3u">
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <img src={{ coll.data.image }} class="small-rounded-circle" alt={{ coll.data.name }}>
+                </div>
+                <div class="9u">
+                    <h2><a href={{ coll.data.link }} target="_blank">{{ coll.data.name }}</a></h2>
+                    <h3> {{ coll.data.position }} </h3>
+                    <hr>
+                    <p>
+                        <span>Time: {{ coll.data.date_coll }}</span>
+                    </p>
+                    <hr>
+                    <p>
+                        {{ coll.data.bio }}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <h2 class="center-text">{{ coll.data.talktitle }}</h2>
+                <p>{{ coll.data.talkapstract }}</p>
+            </div>
+            <br>
+            <hr>
+        {% endif %}
+    {% endfor %}
+
+    <h2>Previous Colloquium Talks</h2>
+    <ul>
+        {% for coll in collections.colloquiums %}
+            {% if coll.data.active == 0 %}
+                <li>
+                    <a href={{ coll.url }} target="_blank">{{ coll.data.name }}</a>: {{ coll.data.talktitle }}, {{ coll.data.season }}
+                </li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+    
+{% endblock content %}

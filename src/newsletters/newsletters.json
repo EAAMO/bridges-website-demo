@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/plain_text.njk",
+    "tags": "newsletters"
+}

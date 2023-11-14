@@ -1,0 +1,25 @@
+{% extends "layouts/plain_text.njk" %}
+
+{% block content %}
+    {{ content | safe }}
+
+    <div class="container">
+        <header>
+            <h2>Active Projects</h2>
+        </header>
+        <div class="row center-text">
+            {% for project in collections.projects %}
+                {% if project.data.active == 1 %}
+                    <section class="4u 12u(mobile) center-text col_c">
+                        <img src={{ project.data.link }} class="small-rounded-circle" alt={{ project.data.name }} width=300>
+                        <br>
+                        <p>
+                            <h3>{{ project.data.name }}</h3>
+                        </p>
+                        <a href={{ project.url }} class="button big style1">Read More</a>
+                    </section>
+                {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+{% endblock content %}

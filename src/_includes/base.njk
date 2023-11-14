@@ -1,0 +1,138 @@
+<!DOCTYPE HTML>
+<!--
+	Polaris by Pixelarity
+	pixelarity.com | hello@pixelarity.com
+	License: pixelarity.com/license
+-->
+<html>
+	<head>
+		<title>{{ title }}</title>
+		<meta charset="utf-8" />
+		<meta name="description" content={{ description }}>
+		<meta name="keywords" content={{ keywords }}>
+		<meta name="author" content={{ author }}>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link rel="icon" type="image/x-icon" href="/assets/logo/eaamo_logo_crop_01.png">
+		<!--[if lte IE 8]><script src="/assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="/assets/css/main.css" />
+		<link rel="stylesheet" href="/assets/css/slideshow.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="/assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body class="homepage">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+					<div class="container">
+
+						<!-- Logo -->
+							<div id="logo">
+								<img src="/assets/logo/eaamo_bridges_logo_07.png" width=200>
+							</div>
+
+						<!-- Nav -->
+							<nav id="nav">
+								<ul class="no-bullets">
+									<li class="active"><a href="/">Homepage</a></li>
+									<li>
+										<a href="/about" class="icon fa-caret-down">About Us</a>
+										<ul>
+											<li class="no-bullets"><a href="/about_us">About Us</a></li>
+											<li class="no-bullets"><a href="/organizers">Organizers</a></li>
+											<li class="no-bullets"><a href="/policies">Policies</a></li>
+											<li class="no-bullets"><a href="/newsletters">Newsletters</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="/events" class="icon fa-caret-down">Events</a>
+										<ul>
+											{% for event in collections.events %}
+												{% if event.data.active == 1 %}
+												<li class="no-bullets"><a href={{ event.url }}>{{ event.data.short_name }}</a></li>
+												{% endif %}
+											{% endfor %}
+										</ul>
+									</li>
+									<li><a href="/colloquiums">Colloquium Series</a></li>
+									<li>
+										<a href="/working_groups" class="icon fa-caret-down">Working Groups</a>
+										<ul>
+											{% for wg in collections.working_groups %}
+												{% if wg.data.active == 1 %}
+													<li class="no-bullets"><a href={{ wg.url }}>{{ wg.data.name }}</a></li>
+												{% endif %}
+											{% endfor %}
+										</ul>
+									</li>
+									<li>
+										<a href="/projects" class="icon fa-caret-down">Projects</a>
+										<ul>
+											{% for project in collections.projects %}
+												{% if project.data.active == 1 %}
+													<li class="no-bullets"><a href={{ project.url }}>{{ project.data.name }}</a></li>
+												{% endif %}
+											{% endfor %}
+										</ul>
+									</li>
+								</ul>
+							</nav>
+
+					</div>
+				</div>
+
+			<!-- Banner -->
+				<div id="banner">
+					<div class="container">
+						<section>
+							<header>
+								<h2>{{ title }}</h2>
+							</header>
+						</section>
+					</div>
+				</div>
+
+				<div id="main">
+					<div class="container">
+						<div class="row">
+							<div id="content" class="12u">
+								{% block content%}
+									{{ content | safe }}
+								{% endblock content%}
+							</div>
+						</div>
+					</div>
+				</div>
+
+                <!-- Footer -->
+				<div id="footer">
+					<div class="container">
+						<div>
+							<!-- Social -->
+							<ul class="icons no-bullets bigger-margin">
+								<li><a href="https://twitter.com/MD4SG" class="icon fa-twitter"><span>Twitter</span></a></li>
+								<li><a href="https://www.linkedin.com/company/md4sg/" class="icon fa-linkedin"><span>Linkedin</span></a></li>
+								<li><a href="https://medium.com/@md4sg" class="icon fa-medium"><span>Medium</span></a></li>
+								<li><a href="https://www.youtube.com/@md4sgorganizers209" class="icon fa-youtube"><span>YouTube</span></a></li>
+							</ul>
+						</div>
+
+						<!-- Copyright -->
+							<div class="copyright">
+								&copy; EAAMO Bridges. All rights reserved.
+							</div>
+					</div>
+				</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src="/assets/js/jquery.min.js"></script>
+			<script src="/assets/js/jquery.dropotron.min.js"></script>
+			<script src="/assets/js/skel.min.js"></script>
+			<script src="/assets/js/util.js"></script>
+			<script src="/assets/js/medium_articles.js"></script>
+			<script src="/assets/js/slideshow.js"></script>
+			<!--[if lte IE 8]><script src="/assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="/assets/js/main.js"></script>
+
+	</body>
+</html>

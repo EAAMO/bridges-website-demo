@@ -1,0 +1,15 @@
+---
+name: Matthew Jackson
+position: Stanford University
+title: Colloquium talk - Matthew Jackson
+date_coll: Friday, March 1 2019, 1:00-2:30 PM EST
+bio: Matthew O. Jackson is the William D. Eberle Professor of Economics at Stanford University and an external faculty member of the Santa Fe Institute and a senior fellow of CIFAR. He was at Northwestern University and Caltech before joining Stanford, and received his BA from Princeton University in 1984 and PhD from Stanford in 1988. Jackson's research interests include game theory, microeconomic theory, and the study of social and economic networks, on which he has published many articles and the books `The Human Network' and `Social and Economic Networks'. He also teaches an online course on networks and co-teaches two others on game theory. Jackson is a Member of the National Academy of Sciences, a Fellow of the American Academy of Arts and Sciences, a Fellow of the Econometric Society, a Game Theory Society Fellow, and an Economic Theory Fellow, and his other honors include the von Neumann Award, a Guggenheim Fellowship, the Social Choice and Welfare Prize, the B.E.Press Arrow Prize for Senior Economists, and teaching awards. He has served as co-editor of Games and Economic Behavior, the Review of Economic Design, and Econometrica.
+talktitle: Using Gossips to Spread Information - Theory and Evidence from Two Randomized Controlled Trials
+talkapstract: Can we identify highly central individuals in a network without collecting network data, simply by asking community members? Can seeding information via such nominated individuals lead to significantly wider diffusion than {choosing} randomly chosen people, or even respected ones? In two separate large field experiments in India, we answer both questions in the affirmative. In particular, in 521 villages in Haryana, we provided information on monthly immunization camps to either randomly selected individuals (in some villages) or to individuals nominated by villagers as people who would be good at transmitting information (in other villages). We find that the number of children vaccinated every month is 22% higher in villages in which nominees received the information. We show that people's knowledge of who are highly central individuals and good seeds can be explained by a model in which community members simply track how often they hear gossip about others. Indeed, we find in a third dataset that nominated seeds are central in a network sense, {and are} not just those with many friends or in {powerful} positions.
+description: Matthew Jackson - Using Gossips to Spread Information- Theory and Evidence from Two Randomized Controlled Trials
+season: Spring 2019
+active: 0
+image: "/assets/colloquium/jackson.jpg"
+link: https://web.stanford.edu/~jacksonm/bio.html
+youtube_link: https://www.youtube.com/watch?v=HSOIeyjScwI
+---

@@ -1,0 +1,207 @@
+{% extends "layouts/plain_text.njk" %}
+
+{% block content %}
+	{{ content | safe }}
+
+	<div class="container">
+		<header>
+			<h2>Organizers</h2>
+		</header>
+		<div class="row justify-content-md-center">
+			{% for organizer in collections.organizers %}
+				<section class="2u 12u(mobile) center-text">
+					<!-- <a href={{ organizer.url }}><img src={{ organizer.data.image }} class="rounded-circle" alt={{ organizer.data.name }}></a> -->
+					<img src={{ organizer.data.image }} class="rounded-circle" alt={{ organizer.data.name }}>
+					<div>
+						<p><b>{{ organizer.data.name }}</b></p>
+						<p>{{ organizer.data.description }}</p>
+						{% if organizer.data.link != "" %}
+							<a href={{ organizer.data.link }} class="icon fa-link" target="_blank"></a>
+						{% endif %}
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<header>
+			<h2>Initiative-wide Leads</h2>
+		</header>
+		<div class="row justify-content-md-center">
+			{% for lead in collections.leads %}
+				<section class="2u 12u(mobile) center-text">
+					<!-- <a href={{ lead.url }}><img src={{ lead.data.image }} class="rounded-circle" alt={{ lead.data.name }}></a> -->
+					<img src={{ lead.data.image }} class="rounded-circle" alt={{ lead.data.name }}>
+					<div>
+						<p><b>{{ lead.data.name }}</b></p>
+						<p>{{ lead.data.description }}</p>
+						{% if lead.data.link != "" %}
+							<a href={{ lead.data.link }} class="icon fa-link" target="_blank"></a>
+						{% endif %}
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+	
+	<hr>
+
+	<div class="container">
+		<header>
+			<h2>Working Group Organizers</h2>
+		</header>
+		<div class="row justify-content-md-center">
+			{% for wg_organizer in collections.working_group_organizers %}
+				<section class="3u 12u(mobile) center-text">
+					<!-- <a href={{ wg_organizer.url }}><img src={{ wg_organizer.data.image }} class="rounded-circle" alt={{ wg_organizer.data.name }}></a> -->
+					<img src={{ wg_organizer.data.image }} class="rounded-circle" alt={{ wg_organizer.data.name }}>
+					<div>
+						<p><b>{{ wg_organizer.data.name }}</b></p>
+						<p>{{ wg_organizer.data.description }}</p>
+						{% if wg_organizer.data.link != "" %}
+							<a href={{ wg_organizer.data.link }} class="icon fa-link" target="_blank"></a>
+						{% endif %}
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<header>
+			<h2>Membership</h2>
+		</header>
+		<div class="row justify-content-md-center">
+			{% for member in collections.membership %}
+				<section class="2u 12u(mobile) center-text">
+					<!-- <a href={{ member.url }}><img src={{ member.data.image }} class="rounded-circle" alt={{ member.data.name }}></a> -->
+					<img src={{ member.data.image }} class="rounded-circle" alt={{ member.data.name }}>
+					<div>
+						<p><b>{{ member.data.name }}</b></p>
+						<p>{{ member.data.description }}</p>
+						{% if member.data.link != "" %}
+							<a href={{ member.data.link }} class="icon fa-link" target="_blank"></a>
+						{% endif %}
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<header>
+			<h2>Community Engagement</h2>
+		</header>
+		<div class="row justify-content-md-center">
+			{% for member in collections.community_engagement %}
+				<section class="4u 12u(mobile) center-text">
+					<!-- <a href={{ member.url }}><img src={{ member.data.image }} class="rounded-circle" alt={{ member.data.name }}></a> -->
+					<img src={{ member.data.image }} class="rounded-circle" alt={{ member.data.name }}>
+					<div>
+						<p><b>{{ member.data.name }}</b></p>
+						<p>{{ member.data.description }}</p>
+						{% if member.data.link != "" %}
+							<a href={{ member.data.link }} class="icon fa-link" target="_blank"></a>
+						{% endif %}
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<header>
+			<h2>Social Media</h2>
+		</header>
+		<div class="row justify-content-md-center">
+			{% for member in collections.social_media %}
+				<section class="3u 12u(mobile) center-text">
+					<!-- <a href={{ member.url }}><img src={{ member.data.image }} class="rounded-circle" alt={{ member.data.name }}></a> -->
+					<img src={{ member.data.image }} class="rounded-circle" alt={{ member.data.name }}>
+					<div>
+						<p><b>{{ member.data.name }}</b></p>
+						<p>{{ member.data.description }}</p>
+						{% if member.data.link != "" %}
+							<a href={{ member.data.link }} class="icon fa-link" target="_blank"></a>
+						{% endif %}
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+
+	<hr>
+
+	<div class="container">
+		<header>
+			<h2>Past Leadership</h2>
+		</header>
+		<h3>Organizers</h3>
+		<ul>
+			{% for leader in collections.past_leadership %}
+				{% if leader.data.group == "Organizers" %}
+					<li> 
+						<span>{{ leader.data.name }}</span>,
+						<span>{{ leader.data.task }}</span>,
+						<span>{{ leader.data.time }}</span>
+						{% if leader.data.link != "" %}
+							<a href={{ leader.data.link }} class="icon fa-link" target="_blank"></a> 
+						{% endif %}
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		<h3>Initiative-wide Leads</h3>
+		<ul>
+			{% for leader in collections.past_leadership %}
+				{% if leader.data.group == "Initiative-wide Leads" %}
+					<li> 
+						<span>{{ leader.data.name }}</span>,
+						<span>{{ leader.data.task }}</span>
+						{% if leader.data.link != "" %}
+							<a href={{ leader.data.link }} class="icon fa-link" target="_blank"></a> 
+						{% endif %}
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		<h3>Working Groups</h3>
+		<ul>
+			{% for leader in collections.past_leadership %}
+				{% if leader.data.group == "Working Groups" %}
+					<li> 
+						<span>{{ leader.data.name }}</span>,
+						<span>{{ leader.data.task }}</span>
+						{% if leader.data.link != "" %}
+							<a href={{ leader.data.link }} class="icon fa-link" target="_blank"></a> 
+						{% endif %}
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+		<h3>Membership</h3>
+		<ul>
+			{% for leader in collections.past_leadership %}
+				{% if leader.data.group == "Membership" %}
+					<li> 
+						<span>{{ leader.data.name }}</span>,
+						<span>{{ leader.data.task }}</span>
+						{% if leader.data.link != "" %}
+							<a href={{ leader.data.link }} class="icon fa-link" target="_blank"></a> 
+						{% endif %}
+					</li>
+				{% endif %}
+			{% endfor %}
+		</ul>
+	</div>
+
+{% endblock content %}

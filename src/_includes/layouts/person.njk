@@ -1,0 +1,17 @@
+{% extends "layouts/plain_text.njk" %}
+
+{% block content %}
+    <div class="center-text">
+        <h2>{{ name }}</h2>
+
+        <p>{{ description }}</p>
+        
+        <img src={{ image }} class="rounded-circle-large" alt={{ name }}>
+        {% if link != "" %}
+        <div>
+            <a href={{ link }} class="icon fa-link" target="_blank"></a>
+        </div>
+        {% endif %}
+    </div>
+    {{ content | safe }}
+{% endblock content %}

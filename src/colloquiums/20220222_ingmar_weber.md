@@ -1,0 +1,15 @@
+---
+name: Ingmar Weber
+position: Qatar Computing Research Institute
+title: Colloquium talk - Ingmar Weber
+date_coll: Tuesday, February 22nd 2022, 12 PM ET / 5 PM WAT / 6 PM CET
+bio: Ingmar Weber is the Research Director for Social Computing at the Qatar Computing Research Institute (QCRI). His interdisciplinary research looks at what online user-generated data can tell us about the offline world and society at large. Working closely with sociologists and demographers he has pioneered the use of online advertising data for complementing official statistics on international migration, digital gender gaps, and poverty. Analyses performed by his team have been used to improve operations by UN agencies and NGOs ranging from Colombia to the Philippines. Prior to joining QCRI, Ingmar was a researcher at Yahoo Research Barcelona. As an undergraduate he studied mathematics at the University of Cambridge before pursuing a PhD at the Max-Planck Institute for Computer Science. He is an ACM Distinguished Member.
+talktitle: Collected for Profit, Repurposed for Social Good - Using Advertising Data to Monitor International Development
+talkapstract: Most of the big internet companies, such as Facebook, Google, or Twitter, generate their revenue from targeted advertising. To offer advertisers with advanced targeting capabilities, these companies collect large amounts of user data to build elaborate profiles. Based on these profiles an advertiser can then choose to target only, say, female Facebook users living in Norte de Santander who are aged 18-24, who used to live in Venezuela, and who have access to an iOS device. To help advertisers in planning their advertising campaigns and the related budget needs, the advertising platforms provide so-called audience estimates on how many of their users match the provided targeting criteria. In the example above, Facebook estimates that there are 1,800 matching monthly active users (as of Mid-December 2021). In this talk, I'll describe how, in close collaboration with different UN agencies, we're tapping into these audience estimates to (i) monitor international migration, (ii) track digital gender gaps, and (iii) map wealth inequalities. We consistently find that, despite fake profiles, and noise in the inference algorithms, data derived from the advertising platforms can provide valuable information that is complementary to other data sources. So data collected for the explicit purpose of selling advertisements and profit maximization can be repurposed for social good. At the same time, our work shows the risk of identifying vulnerable groups, rather than individuals, which is often not adequately considered in discussions focused on individual privacy. Furthermore, it raises questions on what the relationship between internet giants and statistical offices should be.
+description: Ingmar Weber - Collected for Profit, Repurposed for Social Good - Using Advertising Data to Monitor International Development
+season: Spring 2022
+active: 0
+image: "/assets/colloquium/ingmar_sq.jpg"
+link: https://ingmarweber.de/
+youtube_link: https://www.youtube.com/watch?v=SfAb2__kno0
+---

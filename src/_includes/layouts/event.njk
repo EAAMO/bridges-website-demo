@@ -1,0 +1,24 @@
+{% extends "layouts/plain_text.njk" %}
+
+{% block content %}
+    <div class="center-text">
+        <h2>{{ name }}</h2>
+        <span>{{ short_name }}</span>
+
+        <p>
+            <span>Time: {{ time }}</span>
+            <br/>
+            <span>Place: {{ place }}</span>
+        </p>
+
+        <p>{{ description }}</p>
+        
+        <p>Organized by: {{ organizers }}</p>
+        {% if link != "" %}
+            <div>
+                <a href={{ link }} class="button big style1" target="_blank">Read More</a>
+            </div>
+        {% endif %}
+    </div>
+    {{ content | safe }}
+{% endblock content %}

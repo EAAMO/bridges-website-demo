@@ -1,0 +1,56 @@
+{% extends "layouts/plain_text.njk" %}
+
+{% block content %}
+    {{ content | safe }}
+
+    <div class="container">
+        <header>
+            <h2>Active Working Groups</h2>
+        </header>
+        <div class="row center-text">
+            {% for wg in collections.working_groups %}
+                {% if wg.data.active == 1 %}
+                    <section class="4u 12u(mobile) center-text col_c">
+                        <img src={{ wg.data.image }} class="small-rounded-circle" alt={{ wg.data.name }} width=300>
+                        <br>
+                        <p>
+                            <h3>{{ wg.data.name }}</h3>
+                            <span>{{ wg.data.organized_by }}</span>
+                            <br>
+                            <br>
+                            <a href={{ wg.url }} class="button big style1">Read More</a>
+                            <br>
+                            <br>
+                            {{ wg.data.desc_text }}
+                        </p>
+                    </section>
+                {% endif %}
+        {% endfor %}
+        </div>
+    </div>
+
+    <h2>Previous Working Groups</h2>
+    <ul>
+        {% for wg in collections.working_groups %}
+            {% if wg.data.active == 0 %}
+                <li>
+                    <a href={{ wg.url }} target="_blank">{{ wg.data.name }}</a>: {{ wg.data.period }}
+                </li>
+            {% endif%}
+        {% endfor %}
+    </ul>
+
+    <hr>
+
+    <h2>Original Reading Group</h2>
+    <ul>
+    {% for wg in collections.working_groups %}
+        {% if wg.data.active == -1 %}
+            <li>
+                <a href={{ wg.url }} target="_blank">{{ wg.data.name }}</a>: {{ wg.data.period }}
+            </li>
+        {% endif%}
+    {% endfor %}
+    </ul>
+
+{% endblock content %}

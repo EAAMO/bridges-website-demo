@@ -1,0 +1,19 @@
+{% extends "layouts/plain_text.njk" %}
+
+{% block content %}
+	<div class="container">
+		<div class="row justify-content-md-center">
+			{% for newsletter in collections.newsletters %}
+				<section class="2u 12u(mobile) center-text">
+					<!-- <a href={{ newsletter.url }}><img src={{ newsletter.data.image }} class="rounded-circle" alt={{ newsletter.data.name }}></a> -->
+					<img src={{ newsletter.data.image }} class="small-rounded-circle" alt={{ newsletter.data.name }}>
+					<div>
+						<p><b>{{ newsletter.data.name }}</b></p>
+						<a href={{ newsletter.data.link }} class="icon fa-link" target="_blank"></a>
+					</div>
+				</section>
+			{% endfor %}
+		</div>
+	</div>
+
+{% endblock content %}

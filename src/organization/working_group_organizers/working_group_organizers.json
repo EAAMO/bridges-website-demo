@@ -1,0 +1,4 @@
+{
+    "layout": "layouts/person.njk",
+    "tags": "working_group_organizers"
+}

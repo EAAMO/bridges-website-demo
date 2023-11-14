@@ -1,0 +1,38 @@
+{% extends "layouts/plain_text.njk" %}
+
+{% block content %}
+    <div class="row">
+        <div class="3u">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <img src={{ image }} class="small-rounded-circle" alt={{ name }}>
+        </div>
+        <div class="9u">
+            <h2><a href={{ link }} target="_blank">{{ name }}</a></h2>
+            <h3> {{ position }} </h3>
+            <hr>
+            <p>
+                <span>Time: {{ date_coll }}</span>
+                <br>
+                {% if youtube_link != "" %}
+                    <span><a href={{ youtube_link }}>YouTube Link</a></span>
+                {% endif %}
+            </p>
+            <hr>
+            <p>
+                {{ bio }}
+            </p>
+        </div>
+    </div>
+    <div class="row">
+        <h2 class="center-text">{{ talktitle }}</h2>
+        <p>{{ talkapstract }}</p>
+    </div>
+    <br>
+    <hr>
+    {{ content | safe }}
+{% endblock content %}
