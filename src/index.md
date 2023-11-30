@@ -17,6 +17,4 @@ We take an interdisciplinary approach to improve equity and social welfare for m
 
 ## Twitter Activity
 
-<div style="max-height:400px;> 
 <a class="twitter-timeline" href="https://twitter.com/MD4SG?ref_src=twsrc%5Etfw">Tweets by MD4SG</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div>
